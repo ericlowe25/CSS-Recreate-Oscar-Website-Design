@@ -1,36 +1,48 @@
-ul {
+header{
+    text-align: right;
+    background-color: black;
+}
+
+header p{
+    display: inline-block;
+    padding: 5px;
+    color: white;
+}
+
+main {
+    background-color: blue;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "mainText mainText imgContainer imgContainer"
+      "art1 art2 art3 art4";
+  }
+main div{
+    border-top: solid white;
+    margin: 10px;
+}
+
+
+  
+  .mainText { grid-area: mainText; }
+  
+  .art1 { grid-area: art1; }
+  
+  .art2 { grid-area: art2; }
+  
+  .art3 { grid-area: art3; }
+  
+  .imgContainer { grid-area: imgContainer; }
+  
+  .art4 { grid-area: art4; }
+  
+aside{
     background-color: black;
     color: white;
-    display: flex;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 1em;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-  }
-  img {
-    width: 100%;
-    margin-top: -8px;
-  }
-  main {
-    font-family: sans-serif;
-  }
-  nav h1 {
-    background-color: #235557;
-    padding: 1em;
-    margin: 0;
-    box-sizing: ;
-    color: white;
-  }
-  body {
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .form {
-    width: 80%;
-    justify-content: center;
-    display: flex;
-  }
+    position: sticky;
+
+}
